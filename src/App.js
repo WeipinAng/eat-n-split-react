@@ -1,4 +1,3 @@
-import { fireEvent } from "@testing-library/react";
 import { useState } from "react";
 
 const initialFriends = [
@@ -58,6 +57,8 @@ export default function App() {
                     : friend
             )
         );
+
+        setSelectedFriend(null);
     }
 
     return (
